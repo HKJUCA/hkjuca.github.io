@@ -16,7 +16,11 @@
   var animateButton = function(pos) {
     if(pos==undefined) pos=0;
     if(pos>animateSpace || pos<animateSpace*-1) adding*=-1;
-    $('.whats-new-container')[0].style.transform = "translateY("+pos+"px)";
+    $('.whats-new-container').css({
+        'transform': "translateY("+pos+"px)",
+        '-ms-transform': "translateY("+pos+"px)",
+        '-webkit-transform': "translateY("+pos+"px)"
+      });
     setTimeout(function() {
       animateButton(pos+adding);
     },15);
