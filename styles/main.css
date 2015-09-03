@@ -51,7 +51,7 @@ header {
   }*/ }
   header:before {
     content: '';
-    background: url(/images/bg.jpg);
+    background: url(http://hkjuca.github.io/images/bg.png);
     background-size: cover;
     opacity: 0.1;
     top: 0;
