@@ -11,6 +11,10 @@ body {
   font-family: "Times New Roman", Georgia, Serif;
   letter-spacing: 0.05em; }
 
+html, body, #body2 {
+  height: 100%;
+  min-height: 100%; }
+
 header {
   left: 0;
   top: 0;
@@ -78,6 +82,8 @@ header {
     top: 40%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
     text-align: center;
     z-index: 3; }
     header .logo-container .juca-logo {
@@ -108,11 +114,13 @@ header {
       font-size: 16px;
       padding: 5 15px;
       border: 2px solid #fff;
-      z-index: 2; }
+      z-index: 2;
+      position: relative;
+      width: 150px; }
       header .whats-new-container button.whats-new:before {
-        bottom: -28px;
+        bottom: -30px;
         left: 50%;
-        transform: translateX(-50%);
+        margin-left: -15px;
         position: absolute;
         content: '';
         border-top: 15px solid #fff;
@@ -120,9 +128,9 @@ header {
         border-right: 15px solid transparent;
         border-bottom: 15px solid transparent; }
       header .whats-new-container button.whats-new:after {
-        bottom: -24px;
+        bottom: -26px;
         left: 50%;
-        transform: translateX(-50%);
+        margin-left: -14px;
         position: absolute;
         content: '';
         border-top: 14px solid #1daf8f;
@@ -134,79 +142,83 @@ section {
   background: #fff;
   height: 100%;
   position: relative; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     section {
       min-height: 700px; } }
 
-section.news .date {
-  position: absolute;
-  font-size: 40px;
-  line-height: 50px;
-  color: #fff;
-  padding: 0 50px;
-  background: #79bca5;
-  width: 100px;
-  top: 40px; }
-  section.news .date:before {
+section.news {
+  min-height: 650px; }
+  section.news .date {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 25px;
+    font-size: 40px;
+    line-height: 50px;
+    color: #fff;
+    padding: 0 50px;
+    background: #79bca5;
+    width: 100px;
+    top: 40px; }
+    section.news .date:before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 25px;
+      width: 100%;
+      content: '';
+      background: #568a7e;
+      z-index: 0;
+      opacity: 0.2; }
+    section.news .date:after {
+      position: absolute;
+      right: 0;
+      content: '';
+      border-right: #fff solid 25px;
+      border-left: transparent solid 25px;
+      border-top: transparent solid 25px;
+      border-bottom: transparent solid 25px; }
+  section.news .event-info {
     width: 100%;
-    content: '';
-    background: #568a7e;
-    z-index: 0;
-    opacity: 0.2; }
-  section.news .date:after {
     position: absolute;
-    right: 0;
-    content: '';
-    border-right: #fff solid 25px;
-    border-left: transparent solid 25px;
-    border-top: transparent solid 25px;
-    border-bottom: transparent solid 25px; }
-
-section.news .event-info {
-  width: 100%;
-  position: absolute;
-  top: 35%;
-  left: 0;
-  transform: translateY(-50%);
-  text-align: right; }
-  section.news .event-info .event-title {
-    padding: 0 5px;
-    font-size: 100px;
-    color: #79bca5; }
-    section.news .event-info .event-title strong {
-      color: #568a7e; }
-  section.news .event-info .event-title-full {
-    color: #79bca5;
-    padding: 0 5px;
-    line-height: 20px;
-    font-size: 19px; }
-
-section.news .event-about {
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  width: 100%;
-  height: 50%;
-  background: #79bca5;
-  color: #fff;
-  font-size: 16px;
-  line-height: 20px; }
-  section.news .event-about span {
+    top: 35%;
+    left: 0;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    text-align: right; }
+    section.news .event-info .event-title {
+      padding: 0 5px;
+      font-size: 100px;
+      color: #79bca5; }
+      section.news .event-info .event-title strong {
+        color: #568a7e; }
+    section.news .event-info .event-title-full {
+      color: #79bca5;
+      padding: 0 5px;
+      line-height: 20px;
+      font-size: 19px; }
+  section.news .event-about {
     position: absolute;
-    top: 50%;
-    width: 80%;
-    min-width: 300px;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    display: block; }
-  @media screen and (max-width: 500px) {
-    section.news .event-about {
-      top: 60%;
-      height: 40%; } }
+    top: 60%;
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    background: #79bca5;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px; }
+    section.news .event-about span {
+      position: absolute;
+      top: 50%;
+      width: 80%;
+      min-width: 300px;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      display: block; }
+    @media screen and (max-width: 600px) {
+      section.news .event-about {
+        top: 60%;
+        height: 40%; } }
 
 #map {
   width: 100%;
@@ -241,8 +253,10 @@ section.event-details {
         top: 50%;
         left: 50%;
         width: 150px;
-        transform: translateY(-50%) translateX(-50%); }
-  @media screen and (max-width: 500px) {
+        transform: translateY(-50%) translateX(-50%);
+        -ms-transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%); }
+  @media screen and (max-width: 600px) {
     section.event-details {
       min-height: 500px; }
       section.event-details #map {
@@ -273,12 +287,15 @@ section.event-details {
             top: 50%;
             left: 50%;
             width: 100%;
-            transform: translateY(-50%) translateX(-50%); } }
+            transform: translateY(-50%) translateX(-50%);
+            -ms-transform: translateY(-50%) translateX(-50%);
+            -webkit-transform: translateY(-50%) translateX(-50%); } }
 
 section.register {
   background: #1daf8f;
   position: relative;
-  height: 50%; }
+  height: 50%;
+  min-height: 300px; }
   section.register .btn-register {
     position: absolute;
     outline: none;
@@ -292,7 +309,9 @@ section.register {
     border: none;
     cursor: pointer;
     top: 50%;
-    transform: translateY(-50%) translateX(-50%); }
+    transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%); }
     section.register .btn-register:after {
       position: absolute;
       content: '';
