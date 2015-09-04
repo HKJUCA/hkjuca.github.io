@@ -1,5 +1,5 @@
 $mobile:600px;
-
+$header-bg: #1daf8f;
 @font-face {
   font-family: 'Skynet';
   src: url("/fonts/Skynet.otf"); /* File to be stored at your site */
@@ -7,9 +7,9 @@ $mobile:600px;
 }
 
 body {
-  background: #1daf8f;
+  background: #fff;
   margin: 0; 
-  min-width: 400px;
+  min-width: 300px;
   font-family: "Times New Roman", Georgia, Serif; 
   letter-spacing: 0.05em;
 
@@ -22,7 +22,7 @@ html, body, #body2
 header {
   left: 0;
   top: 0;
-  background-color: #1daf8f;
+  background-color: $header-bg;
   height: 100%;
   min-height: 500px;
   text-align: center;
@@ -66,13 +66,13 @@ header {
     }
   }*/
   .slogan-container {
+
     margin-top: 20px;
     opacity: 0.6;
-    //left: 50%;
-    //transform: translateX(-50%);
-    //position: absolute;
-
     padding: 10px;
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
     .header-slogan {
       line-height: 30px;
       padding: 5px 20px;
@@ -122,7 +122,7 @@ header {
     text-align: center;
     z-index: 2; 
     button.whats-new {
-      background: #1daf8f;
+      background: $header-bg;
       outline: none; 
       cursor: pointer;
       color: #fff;
@@ -149,7 +149,7 @@ header {
         margin-left: -14px;
         position: absolute;
         content: '';
-        border-top: 14px solid #1daf8f;
+        border-top: 14px solid $header-bg;
         border-left: 14px solid transparent;
         border-right: 14px solid transparent;
         border-bottom: 14px solid transparent;
@@ -208,6 +208,9 @@ section.news {
     -webkit-transform: translateY(-50%);
     text-align: right;
     .event-title{
+      @media screen and (max-width: $mobile) {
+        font-size: 70px; 
+      }
       padding: 0 5px;
       font-size: 100px;
       color: #79bca5;
@@ -363,7 +366,7 @@ section.register {
       left: 0;
     }
     &.disable {
-      color: #555;
+      color: #999;
       cursor: default;
     }
   } 
