@@ -240,7 +240,7 @@ section.features {
   letter-spacing: 0.025em;
   color: #333;
   font-size: 15px;
-  height: 50%; }
+  height: auto; }
   section.features .container {
     width: 100%;
     padding-right: 15px;
