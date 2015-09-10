@@ -3,7 +3,6 @@
   src: url("/fonts/Skynet.otf");
   /* File to be stored at your site */
   font-weight: normal; }
-
 body {
   background: #fff;
   margin: 0;
@@ -11,7 +10,9 @@ body {
   font-family: "Times New Roman", Georgia, Serif;
   letter-spacing: 0.05em; }
 
-html, body, #body2 {
+html,
+body,
+#body2 {
   height: 100%;
   min-height: 100%; }
 
@@ -27,7 +28,7 @@ header {
   overflow: hidden;
   /* .keyboard-animation {
     font-family: Skynet;
-    font-size: 30px; 
+    font-size: 30px;
     line-height: 90%;
     letter-spacing: 0.05em;
     padding-top: 10px;
@@ -36,7 +37,7 @@ header {
     color: #aebf9b;
     margin-left: -10px;
     .slogan-container {
-      min-width: 290px; 
+      min-width: 290px;
       left: 50%;
       transform: translateX(-50%);
       top: 0px;
@@ -51,7 +52,7 @@ header {
   }*/ }
   header:before {
     content: '';
-    background: url(http://hkjuca.github.io/images/bg.png);
+    background: url("http://hkjuca.github.io/images/bg.png");
     background-size: cover;
     opacity: 0.1;
     top: 0;
@@ -93,7 +94,7 @@ header {
       display: inline-block;
       height: 130px;
       width: 121px;
-      background: url(/images/logo.png);
+      background: url("/images/logo.png");
       background-size: cover; }
     header .logo-container .juca-name {
       display: block;
@@ -230,6 +231,42 @@ section.news {
   width: 100%;
   height: 100%; }
 
+section.features {
+  background: #f7f8fa;
+  padding: 20px 0 20px;
+  min-width: 320px;
+  overflow: hidden;
+  font-family: sans-serif;
+  letter-spacing: 0.025em;
+  color: #333;
+  font-size: 15px;
+  height: 50%; }
+  section.features .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto; }
+    section.features .container .features_item {
+      display: inline-block;
+      width: 24%;
+      text-align: center;
+      margin: 0;
+      font-size: 20px;
+      font-family: 'Raleway', sans-serif; }
+      @media screen and (max-width: 600px) {
+        section.features .container .features_item {
+          width: 99%; } }
+      @media screen and (max-width: 800px) {
+        section.features .container .features_item {
+          width: 49%; } }
+      section.features .container .features_item .features_item_icon {
+        color: #31bfc3;
+        font-size: 80px; }
+      section.features .container .features_item strong {
+        font-size: 45px; }
+
 section.event-details {
   min-height: 600px; }
   section.event-details .details {
@@ -324,7 +361,7 @@ section.register {
       height: 50%;
       top: 50%;
       width: 100%;
-      background: #A2EBE9;
+      background: #a2ebe9;
       opacity: 0.1;
       left: 0; }
     section.register .btn-register.disable {
@@ -364,3 +401,5 @@ section.register {
     section.register a:hover, section.register a:active {
       color: #fff;
       text-decoration: none; }
+
+/*# sourceMappingURL=main.css.map */
