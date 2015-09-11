@@ -6,10 +6,10 @@
     $("html, body").animate({ scrollTop: sectionHeight });
   });
 
-  $('.btn-register').on('click',function() {
-    $('.btn-register').text('Coming soon...');
-    $('.btn-register').addClass('disable');
-  });
+  // $('.btn-register').on('click',function() {
+  //   $('.btn-register').text('Coming soon...');
+  //   $('.btn-register').addClass('disable');
+  // });
 
   var animateSpace = 10;
   var adding = 1;
@@ -41,7 +41,7 @@
           { "saturation": -46 },
           { "gamma": 0.76 }
         ]
-      }]; 
+      }];
     var styledMap = new google.maps.StyledMapType(styles,
     {name: "Styled Map"});
 
@@ -55,7 +55,7 @@
       scaleControl:false,
       streetViewControl:false,
       overviewMapControl:false,
-      rotateControl:false,    
+      rotateControl:false,
       mapTypeId:google.maps.MapTypeId.ROADMAP,
         mapTypeControlOptions: {
           mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
