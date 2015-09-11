@@ -233,7 +233,7 @@ section.news {
 
 section.features {
   background: #f7f8fa;
-  padding: 20px 0 20px;
+  padding: 20px 0;
   min-width: 320px;
   overflow: hidden;
   font-family: sans-serif;
@@ -266,6 +266,34 @@ section.features {
         font-size: 80px; }
       section.features .container .features_item strong {
         font-size: 45px; }
+
+section.agenda {
+  padding: 70px;
+  height: auto;
+  font-size: 18px;
+  font-family: 'Alegreya Sans', sans-serif; }
+  section.agenda h1 {
+    color: #1daf8f; }
+  section.agenda .container {
+    padding: 20px; }
+    section.agenda .container table {
+      border-collapse: collapse; }
+    section.agenda .container td {
+      padding: 20px; }
+      section.agenda .container td:nth-child(1) {
+        width: 30%; }
+      section.agenda .container td:nth-child(2) {
+        width: 30%; }
+      section.agenda .container td:nth-child(3) {
+        width: 30%; }
+    section.agenda .container tr {
+      border-bottom: 1px solid #ccc;
+      padding: 10px; }
+    section.agenda .container th {
+      text-align: left;
+      padding: 10px;
+      width: 20%;
+      color: #1daf8f; }
 
 section.event-details {
   min-height: 600px; }
