@@ -275,6 +275,8 @@ section.agenda {
   font-family: 'Alegreya Sans', sans-serif;
   background: #1daf8f;
   color: white; }
+  section.agenda h1 {
+    text-align: center; }
   section.agenda .container {
     padding: 20px; }
     section.agenda .container table {
