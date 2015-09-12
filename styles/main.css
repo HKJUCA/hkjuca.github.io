@@ -523,6 +523,10 @@ section.lucky-draw {
         height: auto;
         margin: 0 20px;
         padding: 5px; }
+        @media screen and (max-width: 600px) {
+          section.lucky-draw .container .items .item {
+            width: 100%;
+            padding: 0px; } }
         section.lucky-draw .container .items .item img {
           width: 100%;
           height: auto; }

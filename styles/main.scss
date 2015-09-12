@@ -725,6 +725,11 @@ section.lucky-draw {
         margin: 0 20px;
         padding: 5px;
 
+        @media screen and (max-width: $mobile) {
+          width: 100%;
+          padding: 0px;
+        }
+
         img {
           width: 100%;
           height: auto;
