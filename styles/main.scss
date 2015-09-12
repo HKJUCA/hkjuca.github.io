@@ -627,8 +627,6 @@ section.agenda {
     padding: 10px;
   }
 
-
-
   .container {
     max-width: 68em;
     margin-left: auto;
@@ -690,6 +688,52 @@ section.agenda {
 
       @media screen and (max-width: $mobile) {
         padding: 0;
+      }
+    }
+  }
+}
+
+section.lucky-draw {
+  color: $uc-gray;
+  text-align: center;
+  background-color: white;
+
+  .container {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: $uc-gray;
+
+    .title {
+      font-size: 48px;
+      padding: 0;
+      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+      padding-bottom: 30px;
+    }
+
+    .items {
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+
+      .item {
+        display: inline-block;
+        width: 20%;
+        height: auto;
+        margin: 0 20px;
+        padding: 5px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        .item-name{
+          padding: 20px;
+          font-size: 24px;
+        }
       }
     }
   }
@@ -792,6 +836,14 @@ section.register {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
+
+    .title {
+      padding: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 48px;
+      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
 
     .btn-register {
       position: absolute;

@@ -497,6 +497,39 @@ section.agenda {
         section.agenda .container th {
           padding: 0; } }
 
+section.lucky-draw {
+  color: #999;
+  text-align: center;
+  background-color: white; }
+  section.lucky-draw .container {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #999; }
+    section.lucky-draw .container .title {
+      font-size: 48px;
+      padding: 0;
+      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+      padding-bottom: 30px; }
+    section.lucky-draw .container .items {
+      display: inline-block;
+      text-align: center;
+      margin: 0; }
+      section.lucky-draw .container .items .item {
+        display: inline-block;
+        width: 20%;
+        height: auto;
+        margin: 0 20px;
+        padding: 5px; }
+        section.lucky-draw .container .items .item img {
+          width: 100%;
+          height: auto; }
+        section.lucky-draw .container .items .item .item-name {
+          padding: 20px;
+          font-size: 24px; }
+
 section.event-details {
   min-height: 600px;
   padding: 0; }
@@ -573,6 +606,12 @@ section.register {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto; }
+    section.register .container .title {
+      padding: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 48px;
+      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif; }
     section.register .container .btn-register {
       position: absolute;
       outline: none;
