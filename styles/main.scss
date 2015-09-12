@@ -1,7 +1,13 @@
 $mobile: 600px;
 $tablet: 800px;
-$header-bg: #1daf8f;
+$uc-black: #333;
+$uc-green: #00b6b9;
+$uc-red: #ed2739;
+$uc-gray: #999;
+$uc-session-gray: #f7f8fa;
 
+// $uc-green;
+// $uc-red;
 //colors
 $white: #fff;
 $color_mine_shaft_approx: #2f3036;
@@ -21,11 +27,20 @@ $font_3: sans-serif;
   font-weight: normal;
 }
 
+pre,
+code,
+kbd,
+samp,
+tt {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
 body {
   background: #fff;
   margin: 0;
   min-width: 300px;
-  font-family: "Times New Roman", Georgia, Serif;
+  font-family: "AzoSansLight","Helvetica Neue",Helvetica,Arial,sans-serif;
   letter-spacing: 0.05em;
 }
 
@@ -34,6 +49,7 @@ body,
 #body2 {
   height: 100%;
   min-height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 #site-header {
@@ -47,18 +63,19 @@ body,
   z-index: 100;
 
   .container {
-    max-width: 1080px;
+    max-width: 68em;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
 
     a {
       letter-spacing: 2px;
       font-family: "GothamBlack","Myriad Pro Condensed","Arial Narrow",Arial,sans-serif;
       text-transform: uppercase;
-      color: #999;
+      color: $uc-gray;
       text-decoration: none;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 1.4;
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
@@ -68,6 +85,7 @@ body,
         color: #444;
 
         #menu-icon {
+          z-index: 200;
           background-color: #444;
           border-radius: 4px 4px 0 0;
         }
@@ -79,37 +97,38 @@ body,
     }
 
     #logo {
-      margin: 0px auto;
+      margin: 0 auto;
       float: left;
-      width: 160px;
-      height: 30px;
-      transform: translateY(25%);
+      width: auto;
+      height: 50px;
+
+      // transform: translateY(25%);
     }
 
     nav {
       float: right;
-      // padding: 20px;
 
+      // padding: 20px;
       ul {
         list-style: none;
 
         li {
           display: inline-block;
           float: left;
-          padding: 0px 20px 0px 20px;
+          padding: 0 20px;
         }
       }
 
       #menu-icon {
         display: hidden;
-        width: 40px;
-        height: 40px;
-        background: $header-bg url("/images/menu-icon.png") center;
+        width: 50px;
+        height: 50px;
+        background: $uc-red url("/images/menu-icon.png") center;
       }
 
       #register {
         color: white;
-        background-color: #ed2739;
+        background-color: $uc-red;
         padding: 5px 5px 3px;
         margin: 19px 0;
         border-radius: 3px;
@@ -137,8 +156,8 @@ body,
     nav li {
       text-align: center;
       width: 100%;
-      padding: 10px 0;
-      margin: 0;
+      padding: 10px;
+      margin: 5px;
     }
 
     // nav:hover ul {
@@ -149,20 +168,20 @@ body,
   #menu-icon {
     display: inline-block;
   }
-
-
 }
 
 section.intro {
   left: 0;
   top: 0;
-  background-color: $header-bg;
+  background-color: $uc-black;
   height: 100%;
   min-height: 500px;
   text-align: center;
   opacity: 0.9;
   position: relative;
   overflow: hidden;
+  color: white;
+  padding: 0;
 
   &:before {
     content: '';
@@ -200,22 +219,30 @@ section.intro {
       }
     }
   }*/
-  .slogan-container {
-    margin-top: 20px;
-    opacity: 0.6;
-    padding: 10px;
+  .uc-date {
 
+  }
+
+  .slogan-container {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+
+    // margin-top: 20px;
+    opacity: 0.6;
+
+    // padding: 10px;
     @media screen and (max-width: $mobile) {
       display: none;
     }
 
     .header-slogan {
+      margin-top: 20px;
       line-height: 30px;
       padding: 5px 20px;
       width: 80px;
       border-left: #fff solid 2px;
       color: #fff;
-      margin: 0;
       text-align: center;
       display: inline-block;
 
@@ -229,7 +256,7 @@ section.intro {
     width: 100%;
     padding: 0 30px;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     -ms-transform: translateY(-50%) translateX(-50%);
@@ -237,22 +264,54 @@ section.intro {
     text-align: center;
     z-index: 3;
 
-    .juca-logo {
+    .uc-logo {
+      padding-top: 100px;
       display: inline-block;
-      height: 130px;
-      width: 121px;
-      background: url("/images/logo.png");
-      background-size: cover;
+      height: 60px;
+      width: auto;
     }
 
-    .juca-name {
+    .uc-name {
+      margin-top: 30px;
       display: block;
       color: #fff;
-      margin-top: 10px;
-      font-size: 28px;
-      max-width: 500px;
+      font-size: 38px;
+      max-width: 80%;
       margin-left: auto;
       margin-right: auto;
+      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: normal;
+    }
+
+    .uc-title {
+      margin-top: 30px;
+    }
+
+    .uc-register-btn {
+      margin: 30px;
+      background-color: $uc-red;
+      color: white;
+      display: inline-block;
+      padding: 15px 25px;
+      font-family: "AzoSansMedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 5px;
+      border-width: 0;
+      cursor: pointer;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      width: 20%;
+      white-space: normal;
+      overflow: hidden;
+
+      @media screen and (max-width: $mobile) {
+        width: 40%;
+      }
     }
   }
 
@@ -263,8 +322,12 @@ section.intro {
     text-align: center;
     z-index: 2;
 
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+
     button.whats-new {
-      background: $header-bg;
+      background: $uc-black;
       outline: none;
       cursor: pointer;
       color: #fff;
@@ -293,7 +356,7 @@ section.intro {
         margin-left: -14px;
         position: absolute;
         content: '';
-        border-top: 14px solid $header-bg;
+        border-top: 14px solid $uc-black;
         border-left: 14px solid transparent;
         border-right: 14px solid transparent;
         border-bottom: 14px solid transparent;
@@ -304,8 +367,9 @@ section.intro {
 
 section {
   background: #fff;
-  height: 100%;
+  padding: 60px 20px;
   position: relative;
+  border-bottom: 1px solid #e5e5e5;
 
   @media screen and (max-width: $mobile) {
 
@@ -315,7 +379,7 @@ section {
 
 section.news {
   min-height: 650px;
-  background: #f7f8fa;
+  background: $uc-session-gray;
 
   .date {
     position: absolute;
@@ -334,7 +398,7 @@ section.news {
       height: 25px;
       width: 100%;
       content: '';
-      background: #568a7e;
+      background: $uc-green;
       z-index: 0;
       opacity: 0.2;
     }
@@ -418,24 +482,109 @@ section.news {
   height: 100%;
 }
 
+section.uc-description {
+  box-shadow: inset 0 -1px 0 white,inset 0 9px 14px -3px rgba(0,0,0,0.01);
+  color: $uc-gray;
+
+  .container {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    .title {
+      font-size: 48px;
+      padding: 0;
+      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .u-logo {
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+
+      img {
+        width: 12%;
+        height: auto;
+        margin: 0 20px;
+      }
+    }
+
+    strong {
+      color: $uc-red;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .highlight {
+      color: $uc-green;
+    }
+
+    .juca-logo {
+      margin: 20px;
+      background-color: $uc-green;
+      border-width: 0;
+    }
+  }
+}
+
+section.uc-supporting-org {
+  color: $uc-gray;
+  text-align: center;
+  background-color: white;
+
+  .container {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    .title {
+      font-size: 48px;
+      padding: 0;
+      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+    }
+
+    .org-logos {
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+
+      img {
+        width: 10%;
+        height: auto;
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
 section.features {
-  background: #f7f8fa;
+  background: $uc-session-gray;
   padding: 20px 0;
   min-width: 320px;
   overflow: hidden;
   font-family: sans-serif;
   letter-spacing: 0.025em;
-  color: #333;
+  color: $uc-gray;
   font-size: 15px;
   height: auto;
 
   .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-top: 20px;
-    margin-right: auto;
+    max-width: 68em;
     margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 
     .features_item {
       display: inline-block;
@@ -454,11 +603,12 @@ section.features {
       }
 
       .features_item_icon {
-        color: #31bfc3;
-        font-size: 80px;
+        color: $uc-red;
+        font-size: 60px;
       }
 
       strong {
+        color: rgba(#333333, 0.88);
         font-size: 45px;
       }
     }
@@ -466,57 +616,77 @@ section.features {
 }
 
 section.agenda {
-  padding: 70px;
-  height: auto;
   font-size: 18px;
   font-family: 'Alegreya Sans', sans-serif;
-  background: #1daf8f;
-  color: white;
+  background: white;
+  color: $uc-gray;
+  padding: 60px 200px 6px;
+
+  @media screen and (max-width: $mobile) {
+    padding: 10px;
+  }
 
   h1 {
     text-align: center;
+    text-transform: uppercase;
   }
 
   .container {
-    padding: 20px;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 
     table {
       border-collapse: collapse;
     }
 
     td {
-      color: white;
+      color: $uc-gray;
       padding: 20px;
 
+      @media screen and (max-width: $mobile) {
+        padding: 0;
+      }
+
       &:nth-child(1) {
-        width: 30%;
+        width: 20%;
       }
 
       &:nth-child(2) {
-        width: 30%;
+        width: 20%;
       }
 
       &:nth-child(3) {
-        width: 30%;
+        width: 20%;
       }
     }
 
     tr {
-      border-bottom: 1px solid #ccc;
+      border-bottom: #1daf8f solid 1px;
       padding: 10px;
+
+      @media screen and (max-width: $mobile) {
+        padding: 0;
+      }
     }
 
     th {
-      color: white;
+      color: $uc-green;
       text-align: left;
       padding: 10px;
       width: 20%;
+
+      @media screen and (max-width: $mobile) {
+        padding: 0;
+      }
     }
   }
 }
 
 section.event-details {
   min-height: 600px;
+  padding: 0;
 
   .details {
     z-index: 3;
@@ -528,7 +698,7 @@ section.event-details {
     height: 100%;
     left: 20px;
     min-width: 200px;
-    color: #1daf8f;
+    color: $uc-green;
 
     .details-section {
       display: block;
@@ -580,7 +750,7 @@ section.event-details {
         vertical-align: middle;
         position: relative;
         float: left;
-        border-bottom: #1daf8f solid 1px;
+        border-bottom: $uc-green solid 1px;
 
         i {
           display: block;
@@ -603,88 +773,93 @@ section.event-details {
 }
 
 section.register {
-  background: #1daf8f;
-  position: relative;
-  height: 50%;
-  min-height: 300px;
+  background: white;
+  text-align: center;
+  color: $uc-gray;
 
-  .btn-register {
-    position: absolute;
-    outline: none;
-    height: 100px;
-    left: 50%;
-    width: 30%;
-    min-width: 200px;
-    font-size: 30px;
-    background: #fff;
-    color: #1daf8f;
-    border: none;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -ms-transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
+  .container {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
 
-    &:after {
+    .btn-register {
       position: absolute;
-      content: '';
-      height: 50%;
+      outline: none;
+      height: 100px;
+      left: 50%;
+      width: 30%;
+      min-width: 200px;
+      font-size: 30px;
+      background: #fff;
+      color: #1daf8f;
+      border: none;
+      cursor: pointer;
       top: 50%;
-      width: 100%;
-      background: #a2ebe9;
-      opacity: 0.1;
-      left: 0;
-    }
-
-    &.disable {
-      color: #999;
-      cursor: default;
-    }
-  }
-
-  .copyright {
-    right: 20px;
-    position: absolute;
-    bottom: 20px;
-    color: #fff;
-    font-size: 14px;
-  }
-
-  i.fa {
-    left: 20px;
-    position: absolute;
-    bottom: 20px;
-    color: #fff;
-    font-size: 30px;
-  }
-
-  a {
-    .hint {
-      padding: 5px 10px;
-      position: absolute;
-      bottom: 60px;
-      border: #fff solid 2px;
-      left: 70px;
-      border-radius: 10px;
+      transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
 
       &:after {
-        content: '';
-        width: 7px;
-        height: 7px;
         position: absolute;
-        border-radius: 10px;
-        left: -20px;
-        bottom: -10px;
-        border: #fff solid 2px;
+        content: '';
+        height: 50%;
+        top: 50%;
+        width: 100%;
+        background: #a2ebe9;
+        opacity: 0.1;
+        left: 0;
+      }
+
+      &.disable {
+        color: $uc-gray;
+        cursor: default;
       }
     }
-    color: #fff;
-    text-decoration: none;
+  }
+}
 
-    &:hover,
-    &:active {
-      color: #fff;
-      text-decoration: none;
+footer {
+  background: $uc-session-gray;
+  text-align: center;
+  padding: 60px 20px;
+
+  .container {
+    border-top: 1px solid $uc-gray;
+    border-bottom: 1px solid $uc-gray;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+
+    .copyright {
+      float: right;
+      right: 20px;
+      color: $uc-gray;
+      font-size: 14px;
+    }
+
+    a {
+      float: left;
+
+      i.fa {
+        float: left;
+        left: 20px;
+        color: $uc-gray;
+        font-size: 30px;
+      }
+
+      .hint {
+        padding: 5px 10px;
+        border: $uc-gray;
+        left: 70px;
+        border-radius: 10px;
+      }
+
+      &:hover,
+      &:active {
+        color: #fff;
+        text-decoration: none;
+      }
     }
   }
 }
