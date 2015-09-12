@@ -363,8 +363,7 @@ section.uc-description {
     section.uc-description .container .title {
       font-size: 48px;
       padding: 0;
-      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
-      text-transform: uppercase; }
+      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif; }
     section.uc-description .container .content {
       padding: 20px; }
     section.uc-description .container .u-logo {
@@ -373,7 +372,7 @@ section.uc-description {
       margin: 0;
       padding: 0; }
       section.uc-description .container .u-logo img {
-        width: 12%;
+        width: 10%;
         height: auto;
         margin: 0 20px; }
     section.uc-description .container strong {
@@ -455,14 +454,18 @@ section.agenda {
   @media screen and (max-width: 600px) {
     section.agenda {
       padding: 10px; } }
-  section.agenda h1 {
-    text-align: center;
-    text-transform: uppercase; }
   section.agenda .container {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 60px; }
+    section.agenda .container .title {
+      padding: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 48px;
+      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif; }
     section.agenda .container table {
       border-collapse: collapse; }
     section.agenda .container td {
@@ -483,6 +486,8 @@ section.agenda {
       @media screen and (max-width: 600px) {
         section.agenda .container tr {
           padding: 0; } }
+      section.agenda .container tr:last-of-type {
+        border: none; }
     section.agenda .container th {
       color: #00b6b9;
       text-align: left;
