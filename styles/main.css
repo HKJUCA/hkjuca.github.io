@@ -19,7 +19,7 @@ body,
 #site-header {
   background: #fff;
   width: 100%;
-  height: 76px;
+  height: 50px;
   position: fixed;
   top: 0;
   left: 0;
@@ -49,16 +49,13 @@ body,
     #site-header .container img {
       width: 100%; }
     #site-header .container #logo {
-      margin: 20px;
+      margin: 0px auto;
       float: left;
-      width: 200px;
-      height: 40px;
-      background: url("/images/logo.png") no-repeat center;
-      background-color: #1daf8f;
-      display: block; }
+      width: 160px;
+      height: 30px;
+      transform: translateY(25%); }
     #site-header .container nav {
-      float: right;
-      padding: 20px; }
+      float: right; }
       #site-header .container nav ul {
         list-style: none; }
         #site-header .container nav ul li {
@@ -80,30 +77,24 @@ body,
 @media only screen and (max-width: 600px) {
   #site-header {
     position: absolute;
-    height: 76px; }
+    height: 50px; }
+    #site-header nav ul,
+    #site-header nav:active ul {
+      display: none;
+      position: absolute;
+      padding: 20px;
+      background: #fff;
+      right: 0;
+      top: 34px;
+      width: 100%; }
+    #site-header nav li {
+      text-align: center;
+      width: 100%;
+      padding: 10px 0;
+      margin: 0; }
 
   #menu-icon {
-    display: inline-block; }
-
-  nav ul,
-  nav:active ul {
-    display: none;
-    position: absolute;
-    padding: 20px;
-    background: #fff;
-    border: 5px solid #444;
-    right: 0;
-    top: 60px;
-    width: 100%; }
-
-  nav li {
-    text-align: center;
-    width: 100%;
-    padding: 10px 0;
-    margin: 0; }
-
-  nav:hover ul {
-    display: block; } }
+    display: inline-block; } }
 section.intro {
   left: 0;
   top: 0;

@@ -6,6 +6,17 @@
     $("html, body").animate({ scrollTop: sectionHeight });
   });
 
+  var on = true;
+  $('#site-header').on('click',function(){
+    if (on) {
+        $(this).find('ul').show(200);
+        on = !on;
+    }else {
+      $(this).find('ul').hide(200);
+        on = !on;
+    }
+  });
+
   // $('.btn-register').on('click',function() {
   //   $('.btn-register').text('Coming soon...');
   //   $('.btn-register').addClass('disable');
