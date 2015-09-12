@@ -10,7 +10,28 @@
 </head>
 
 <body>
-  <header class="juca-header">
+  <header id="site-header">
+    <section class="container">
+      <!-- <a href="#" id="logo">
+        <div class="event-title">
+          Un
+          <strong>iT</strong>Ex Con
+        </div>
+      </a> -->
+      <img id="logo" src="/images/conf-icon.png" alt="">
+      <nav id="site-navigation">
+        <a href="#" id="menu-icon"></a>
+        <ul>
+
+          <li><a href="#">Home</a></li>
+          <li><a href="#tag-about">About</a></li>
+          <li><a href="#tag-agenda">Agenda</a></li>
+          <li><a href="http://www.eventbrite.com/e/university-it-exploration-conference-2015-tickets-18499754263" id="register">register</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <section class="intro">
     <div class="keyboard-animation">
     </div>
     <div class="logo-container">
@@ -31,7 +52,7 @@
     <div class="whats-new-container">
       <button class="whats-new">What's New</button>
     </div>
-  </header>
+  </section>
   <section class="news">
     <div class="event-info">
       <div class="event-title">
@@ -42,7 +63,7 @@
         University Information Technology Exploration Conference 2015
       </div>
     </div>
-    <div class="event-about">
+    <div class="event-about" id="tag-about">
       <span>
         UnitEx Con is a conference for students in universities to Explore, Experience and Exchange the new trend of IT industry. It covers revolutionary concepts,inventions or tools. Functions including talks, workshops, panel discussions, booths, activities
         will be held in order to provide direct interactions between students and companies.
@@ -85,7 +106,7 @@
       </div>
     </div>
   </section>
-  <section class="agenda">
+  <section class="agenda" id="tag-agenda">
     <div class="container">
       <h1>Schedule</h1>
       <table class="table">
@@ -235,7 +256,9 @@
     </div>
   </section>
   <section class="register">
-    <a href="http://www.eventbrite.com/e/university-it-exploration-conference-2015-tickets-18499754263"><button class="btn-register">Register</button></a>
+    <a href="http://www.eventbrite.com/e/university-it-exploration-conference-2015-tickets-18499754263">
+      <button class="btn-register">Register</button>
+    </a>
     <a href="https://www.facebook.com/HK.JUCA">
       <div class="hint">Stay tuned with us</div>
       <i class="fa fa-facebook-square"></i>

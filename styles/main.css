@@ -16,7 +16,95 @@ body,
   height: 100%;
   min-height: 100%; }
 
-header {
+#site-header {
+  background: #fff;
+  width: 100%;
+  height: 76px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #e6e6e6;
+  z-index: 100; }
+  #site-header .container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto; }
+    #site-header .container a {
+      letter-spacing: 2px;
+      font-family: "GothamBlack","Myriad Pro Condensed","Arial Narrow",Arial,sans-serif;
+      text-transform: uppercase;
+      color: #999;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.4;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      #site-header .container a:hover {
+        color: #444; }
+        #site-header .container a:hover #menu-icon {
+          background-color: #444;
+          border-radius: 4px 4px 0 0; }
+    #site-header .container img {
+      width: 100%; }
+    #site-header .container #logo {
+      margin: 20px;
+      float: left;
+      width: 200px;
+      height: 40px;
+      background: url("/images/logo.png") no-repeat center;
+      background-color: #1daf8f;
+      display: block; }
+    #site-header .container nav {
+      float: right;
+      padding: 20px; }
+      #site-header .container nav ul {
+        list-style: none; }
+        #site-header .container nav ul li {
+          display: inline-block;
+          float: left;
+          padding: 0px 20px 0px 20px; }
+      #site-header .container nav #menu-icon {
+        display: hidden;
+        width: 40px;
+        height: 40px;
+        background: #1daf8f url("/images/menu-icon.png") center; }
+      #site-header .container nav #register {
+        color: white;
+        background-color: #ed2739;
+        padding: 5px 5px 3px;
+        margin: 19px 0;
+        border-radius: 3px; }
+
+@media only screen and (max-width: 600px) {
+  #site-header {
+    position: absolute;
+    height: 76px; }
+
+  #menu-icon {
+    display: inline-block; }
+
+  nav ul,
+  nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #fff;
+    border: 5px solid #444;
+    right: 0;
+    top: 60px;
+    width: 100%; }
+
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0; }
+
+  nav:hover ul {
+    display: block; } }
+section.intro {
   left: 0;
   top: 0;
   background-color: #1daf8f;
@@ -50,7 +138,7 @@ header {
       }
     }
   }*/ }
-  header:before {
+  section.intro:before {
     content: '';
     background: url("http://hkjuca.github.io/images/bg.png");
     background-size: cover;
@@ -61,14 +149,14 @@ header {
     height: 100%;
     position: absolute;
     z-index: 1; }
-  header .slogan-container {
+  section.intro .slogan-container {
     margin-top: 20px;
     opacity: 0.6;
     padding: 10px; }
     @media screen and (max-width: 600px) {
-      header .slogan-container {
+      section.intro .slogan-container {
         display: none; } }
-    header .slogan-container .header-slogan {
+    section.intro .slogan-container .header-slogan {
       line-height: 30px;
       padding: 5px 20px;
       width: 80px;
@@ -77,9 +165,9 @@ header {
       margin: 0;
       text-align: center;
       display: inline-block; }
-      header .slogan-container .header-slogan:first-of-type {
+      section.intro .slogan-container .header-slogan:first-of-type {
         border: none; }
-  header .logo-container {
+  section.intro .logo-container {
     width: 100%;
     padding: 0 30px;
     position: absolute;
@@ -90,13 +178,13 @@ header {
     -webkit-transform: translateY(-50%) translateX(-50%);
     text-align: center;
     z-index: 3; }
-    header .logo-container .juca-logo {
+    section.intro .logo-container .juca-logo {
       display: inline-block;
       height: 130px;
       width: 121px;
       background: url("/images/logo.png");
       background-size: cover; }
-    header .logo-container .juca-name {
+    section.intro .logo-container .juca-name {
       display: block;
       color: #fff;
       margin-top: 10px;
@@ -104,13 +192,13 @@ header {
       max-width: 500px;
       margin-left: auto;
       margin-right: auto; }
-  header .whats-new-container {
+  section.intro .whats-new-container {
     position: absolute;
     bottom: 40px;
     width: 100%;
     text-align: center;
     z-index: 2; }
-    header .whats-new-container button.whats-new {
+    section.intro .whats-new-container button.whats-new {
       background: #1daf8f;
       outline: none;
       cursor: pointer;
@@ -121,7 +209,7 @@ header {
       z-index: 2;
       position: relative;
       width: 150px; }
-      header .whats-new-container button.whats-new:before {
+      section.intro .whats-new-container button.whats-new:before {
         bottom: -30px;
         left: 50%;
         margin-left: -15px;
@@ -131,7 +219,7 @@ header {
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-bottom: 15px solid transparent; }
-      header .whats-new-container button.whats-new:after {
+      section.intro .whats-new-container button.whats-new:after {
         bottom: -26px;
         left: 50%;
         margin-left: -14px;
@@ -146,9 +234,6 @@ section {
   background: #fff;
   height: 100%;
   position: relative; }
-  @media screen and (max-width: 600px) {
-    section {
-      min-height: 700px; } }
 
 section.news {
   min-height: 650px;

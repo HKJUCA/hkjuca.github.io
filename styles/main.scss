@@ -2,6 +2,18 @@ $mobile: 600px;
 $tablet: 800px;
 $header-bg: #1daf8f;
 
+//colors
+$white: #fff;
+$color_mine_shaft_approx: #2f3036;
+$color_mountain_meadow_approx: #19c589;
+$color_concrete_approx: #f3f3f3;
+
+//fonts
+$font_0: Helvetica Neue;
+$font_1: Helvetica;
+$font_2: Arial;
+$font_3: sans-serif;
+
 @font-face {
   font-family: 'Skynet';
   src: url("/fonts/Skynet.otf");
@@ -24,7 +36,125 @@ body,
   min-height: 100%;
 }
 
-header {
+#site-header {
+  background: #fff;
+  width: 100%;
+  height: 76px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #e6e6e6;
+  z-index: 100;
+
+  .container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+
+    a {
+      letter-spacing: 2px;
+      font-family: "GothamBlack","Myriad Pro Condensed","Arial Narrow",Arial,sans-serif;
+      text-transform: uppercase;
+      color: #999;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.4;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: #444;
+
+        #menu-icon {
+          background-color: #444;
+          border-radius: 4px 4px 0 0;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    #logo {
+      margin: 20px;
+      float: left;
+      width: 200px;
+      height: 40px;
+      background: url("/images/logo.png") no-repeat center;
+      background-color: $header-bg;
+      display: block;
+    }
+
+    nav {
+      float: right;
+      padding: 20px;
+
+      ul {
+        list-style: none;
+
+        li {
+          display: inline-block;
+          float: left;
+          padding: 0px 20px 0px 20px;
+        }
+      }
+
+      #menu-icon {
+        display: hidden;
+        width: 40px;
+        height: 40px;
+        background: $header-bg url("/images/menu-icon.png") center;
+      }
+
+      #register {
+        color: white;
+        background-color: #ed2739;
+        padding: 5px 5px 3px;
+        margin: 19px 0;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : $mobile) {
+  #site-header {
+    position: absolute;
+    height: 76px;
+  }
+
+  #menu-icon {
+    display: inline-block;
+  }
+
+  nav ul,
+  nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #fff;
+    border: 5px solid #444;
+    right: 0;
+    top: 60px;
+    width: 100%;
+  }
+
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  nav:hover ul {
+    display: block;
+  }
+}
+
+section.intro {
   left: 0;
   top: 0;
   background-color: $header-bg;
@@ -179,13 +309,15 @@ section {
   position: relative;
 
   @media screen and (max-width: $mobile) {
-    min-height: 700px;
+
+    // min-height: 700px;
   }
 }
 
 section.news {
   min-height: 650px;
   background: #f7f8fa;
+
   .date {
     position: absolute;
     font-size: 40px;
@@ -341,9 +473,11 @@ section.agenda {
   font-family: 'Alegreya Sans', sans-serif;
   background: #1daf8f;
   color: white;
-  h1{
+
+  h1 {
     text-align: center;
   }
+
   .container {
     padding: 20px;
 
@@ -351,16 +485,19 @@ section.agenda {
       border-collapse: collapse;
     }
 
-    td{
+    td {
       color: white;
       padding: 20px;
-      &:nth-child(1){
+
+      &:nth-child(1) {
         width: 30%;
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         width: 30%;
       }
-      &:nth-child(3){
+
+      &:nth-child(3) {
         width: 30%;
       }
     }
