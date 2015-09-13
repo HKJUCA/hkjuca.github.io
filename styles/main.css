@@ -141,17 +141,21 @@ section.intro {
       }
     }
   }*/ }
-  section.intro:before {
-    content: '';
-    background: url("http://hkjuca.github.io/images/bg.png");
-    background-size: cover;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  section.intro .uc-intro-video {
     position: absolute;
-    z-index: 1; }
+    background-size: cover;
+    min-width: auto;
+    min-height: auto;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0; }
+    section.intro .uc-intro-video video {
+      background-size: cover;
+      opacity: 1;
+      width: 100%; }
   section.intro .slogan-container {
     max-width: 68em;
     margin-left: auto;
@@ -526,7 +530,7 @@ section.lucky-draw {
         @media screen and (max-width: 600px) {
           section.lucky-draw .container .items .item {
             width: 100%;
-            padding: 0px; } }
+            padding: 0; } }
         section.lucky-draw .container .items .item img {
           width: 100%;
           height: auto; }

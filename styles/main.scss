@@ -183,18 +183,38 @@ section.intro {
   color: white;
   padding: 0;
 
-  &:before {
-    content: '';
-    background: url("http://hkjuca.github.io/images/bg.png");
+  .uc-intro-video {
+    position: absolute;
     background-size: cover;
-    opacity: 0.1;
+    min-width: auto;
+    min-height: auto;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+
+    overflow: hidden;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
+
+    video {
+      background-size: cover;
+      opacity: 1;
+      width: 100%;
+    }
   }
+
+  // &:before {
+  //   content: '';
+  //   background: url("http://hkjuca.github.io/images/bg.png");
+  //   background-size: cover;
+  //   opacity: 0.1;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   z-index: 1;
+  // }
   /* .keyboard-animation {
     font-family: Skynet;
     font-size: 30px;
@@ -727,7 +747,7 @@ section.lucky-draw {
 
         @media screen and (max-width: $mobile) {
           width: 100%;
-          padding: 0px;
+          padding: 0;
         }
 
         img {
@@ -735,7 +755,7 @@ section.lucky-draw {
           height: auto;
         }
 
-        .item-name{
+        .item-name {
           padding: 20px;
           font-size: 24px;
         }
