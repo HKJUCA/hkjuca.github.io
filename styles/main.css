@@ -390,7 +390,8 @@ section.uc-description {
     section.uc-description .container .title {
       font-size: 48px;
       padding-bottom: 1em;
-      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif; }
+      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: uppercase; }
     section.uc-description .container .content {
       padding: 20px;
       line-height: 2em;
