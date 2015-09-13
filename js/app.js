@@ -5,20 +5,13 @@
     $("html, body").animate({ scrollTop: $(window).height() });
   });
 
-  // function smooth_scolling(id){
-  //   var temp = $('#' + id).offset().top
-  //   alert(temp)
-  //   $('html, body').animate({
-  //       scrollTop: temp
-  //   }, 200);
-  // }
-  //
-  // $("[id^=nav-]").click(function() {
-  //   var id = 'nav-' + this.id.split('-')[1]
-  //   smooth_scolling(id)
-  // });
-
-
+  $('.nav-action').click(function(){
+    $('html, body').animate({
+        // scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+  });
 
   var on = true;
   $('#menu-icon').on('click',function(){
