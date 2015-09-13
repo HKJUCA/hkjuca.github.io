@@ -207,7 +207,8 @@ section.intro {
     -ms-transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
     text-align: center;
-    z-index: 3; }
+    z-index: 3;
+    box-sizing: border-box; }
     section.intro .logo-container .uc-logo {
       padding-top: 100px;
       display: inline-block;
@@ -391,7 +392,9 @@ section.uc-description {
       padding: 0;
       font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif; }
     section.uc-description .container .content {
-      padding: 20px; }
+      padding: 20px;
+      line-height: 2em;
+      font-size: 19x; }
     section.uc-description .container .u-logos {
       display: inline-block;
       text-align: center;
@@ -488,7 +491,8 @@ section.features {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    text-align: center; }
+    text-align: center;
+    box-sizing: border-box; }
     section.features .container .features_item {
       display: inline-block;
       width: 24%;
@@ -585,7 +589,6 @@ section.lucky-draw {
         display: inline-block;
         width: 20%;
         height: auto;
-        margin: 0 20px;
         padding: 5px; }
         @media screen and (max-width: 600px) {
           section.lucky-draw .container .items .item {
