@@ -23,8 +23,7 @@ body,
 #body2 {
   height: 100%;
   min-height: 100%;
-  -webkit-font-smoothing: antialiased;
-  font-weight: normal; }
+  -webkit-font-smoothing: antialiased; }
 
 #site-header {
   background: #fff;
