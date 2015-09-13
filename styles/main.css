@@ -65,7 +65,8 @@ body,
       width: auto;
       height: 50px; }
     #site-header .container nav {
-      float: right; }
+      float: right;
+      min-height: 100%; }
       #site-header .container nav ul {
         list-style: none; }
         #site-header .container nav ul li {
