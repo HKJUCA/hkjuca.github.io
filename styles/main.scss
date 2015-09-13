@@ -52,6 +52,21 @@ body,
   -webkit-font-smoothing: antialiased;
 }
 
+section {
+  .title {
+    font-size: 38px;
+    text-align: center;
+    padding-bottom: 1em;
+    font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 640px) {
+      font-size: 18px;
+      padding-bottom: 0;
+    }
+  }
+}
+
 #site-header {
   background: #fff;
   width: 100%;
@@ -108,6 +123,7 @@ body,
     nav {
       float: right;
       min-height: 100%;
+
       // padding: 20px;
       ul {
         list-style: none;
@@ -217,7 +233,6 @@ section.intro {
       min-height: 100%;
       width: auto;
       height: auto;
-      height: auto;
     }
   }
 
@@ -320,6 +335,10 @@ section.intro {
       display: inline-block;
       height: 60px;
       width: auto;
+
+      @media screen and (max-width: $mobile) {
+        height: 50px;
+      }
     }
 
     .uc-name {
@@ -332,6 +351,11 @@ section.intro {
       margin-right: auto;
       font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
       font-weight: normal;
+
+      @media screen and (max-width: $mobile) {
+        font-size: 20px;
+        font-weight: bold;
+      }
     }
 
     .uc-title {
@@ -362,6 +386,8 @@ section.intro {
 
       @media screen and (max-width: $mobile) {
         width: 40%;
+        padding: 10px 20px;
+        margin: 0;
       }
     }
   }
@@ -543,17 +569,15 @@ section.uc-description {
     margin-right: auto;
     text-align: center;
 
-    .title {
-      font-size: 48px;
-      padding-bottom: 1em;
-      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
-      text-transform: uppercase;
-    }
-
     .content {
       padding: 20px;
       line-height: 2em;
       font-size: 19x;
+
+      @media screen and (max-width: $mobile) {
+        padding: 15px;
+        line-height: 1.3em;
+      }
     }
 
     .u-logos {
@@ -572,7 +596,7 @@ section.uc-description {
         text-align: center;
 
         @media screen and (max-width: $mobile) {
-          width: 100%;
+          width: 70%;
           padding: 0;
         }
 
@@ -624,13 +648,6 @@ section.uc-supporting-org {
     margin-right: auto;
     text-align: center;
 
-    .title {
-      font-size: 48px;
-      padding-bottom: 1em;
-      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
-      text-transform: uppercase;
-    }
-
     .org-logos {
       display: inline-block;
       text-align: center;
@@ -642,7 +659,8 @@ section.uc-supporting-org {
         width: 20%;
         height: auto;
         margin: 0 auto;
-        padding: 20px;
+
+        // padding: 20px;
         text-align: center;
         vertical-align: middle;
 
@@ -652,8 +670,10 @@ section.uc-supporting-org {
         }
 
         @media screen and (max-width: $mobile) {
-          width: 80%;
+          width: 70%;
           margin: 20px;
+
+          // padding: 5px;
         }
 
         img {
@@ -729,7 +749,7 @@ section.agenda {
   padding: 60px 200px 6px;
 
   @media screen and (max-width: $mobile) {
-    padding: 10px;
+    padding: 0;
   }
 
   .container {
@@ -741,10 +761,6 @@ section.agenda {
 
     .title {
       padding: 50px;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 48px;
-      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
     }
 
     table {
@@ -810,14 +826,6 @@ section.lucky-draw {
     text-align: center;
     color: $uc-gray;
 
-    .title {
-      font-size: 48px;
-      padding: 0;
-      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
-      text-transform: uppercase;
-      padding-bottom: 30px;
-    }
-
     .items {
       display: inline-block;
       text-align: center;
@@ -830,7 +838,7 @@ section.lucky-draw {
         padding: 5px;
 
         @media screen and (max-width: $mobile) {
-          width: 100%;
+          width: 70%;
           padding: 0;
         }
 
@@ -940,18 +948,14 @@ section.register {
   background: white;
   text-align: center;
   color: $uc-gray;
-
+  
   .container {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
 
     .title {
-      padding-bottom: 50px;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 48px;
-      font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
+      margin: 50px;
     }
 
     .btn-register {
