@@ -116,6 +116,22 @@ body,
           display: inline-block;
           float: left;
           padding: 0 20px;
+
+          @media screen and (max-width: 1080px) {
+            padding: 0 15px;
+          }
+
+          @media screen and (max-width: 970px) {
+            padding: 0 4px;
+          }
+
+          @media screen and (max-width: 890px) {
+            padding: 0 3px;
+          }
+
+          // @media screen and (max-width: 960px){
+          //   padding: 0 8px;
+          // }
         }
       }
 
@@ -137,7 +153,7 @@ body,
   }
 }
 
-@media only screen and (max-width : $mobile) {
+@media only screen and (max-width : $tablet) {
   #site-header {
     position: absolute;
     height: 50px;
@@ -183,28 +199,29 @@ section.intro {
   color: white;
   padding: 0;
 
-
   .uc-intro-video {
     position: absolute;
     background-size: cover;
     min-width: auto;
     min-height: auto;
     width: 100%;
-    height: auto;
+    height: 100%;
     z-index: 0;
-
-    overflow: hidden;
     top: 0;
     left: 0;
 
     video {
       background-size: cover;
       opacity: 1;
-      width: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      height: auto;
     }
   }
 
-  .video-cover{
+  .video-cover {
     background-color: $uc-black;
     position: absolute;
     background-size: cover;
@@ -537,16 +554,40 @@ section.uc-description {
       padding: 20px;
     }
 
-    .u-logo {
+    .u-logos {
       display: inline-block;
       text-align: center;
-      margin: 0;
+      margin: 10px;
       padding: 0;
+      text-align: center;
 
-      img {
-        width: 10%;
+      .u-logo {
+        display: inline-block;
+        width: 20%;
         height: auto;
         margin: 0 20px;
+        padding: 5px;
+        text-align: center;
+
+        @media screen and (max-width: $mobile) {
+          width: 100%;
+          padding: 0;
+        }
+
+        img {
+          width: 80%;
+          height: auto;
+          margin: 30 20px;
+
+          @media screen and (max-width: $mobile) {
+            width: 80%;
+          }
+
+          .u-logo-name {
+            padding: 20px;
+            font-size: 24px;
+          }
+        }
       }
     }
 
@@ -594,10 +635,37 @@ section.uc-supporting-org {
       margin: 0;
       padding: 0;
 
-      img {
-        width: 10%;
+      .org-logo {
+        display: inline-block;
+        width: 20%;
         height: auto;
-        margin: 0 20px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+
+        @media screen and (max-width: 700px) {
+          width: 50%;
+          margin: 20px;
+        }
+
+        @media screen and (max-width: $mobile) {
+          width: 80%;
+          margin: 20px;
+        }
+
+        img {
+          width: 80%;
+          height: auto;
+
+          @media screen and (max-width: $mobile) {
+            width: 80%;
+          }
+
+          .org-logo-name {
+            padding: 20px;
+            font-size: 24px;
+          }
+        }
       }
     }
   }
