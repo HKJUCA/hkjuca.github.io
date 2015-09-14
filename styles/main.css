@@ -3,6 +3,7 @@
   src: url("/fonts/Skynet.otf");
   /* File to be stored at your site */
   font-weight: normal; }
+
 pre,
 code,
 kbd,
@@ -123,9 +124,9 @@ section .title {
       width: 100%;
       padding: 10px;
       margin: 5px; }
-
   #menu-icon {
     display: inline-block; } }
+
 section.intro {
   left: 0;
   top: 0;
@@ -741,8 +742,7 @@ footer {
         border: #999;
         left: 70px;
         border-radius: 10px; }
-      footer .container a:hover, footer .container a:active {
+      footer .container a:hover,
+      footer .container a:active {
         color: #fff;
         text-decoration: none; }
-
-/*# sourceMappingURL=main.css.map */
