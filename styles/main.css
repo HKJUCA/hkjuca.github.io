@@ -1,9 +1,7 @@
 @font-face {
   font-family: 'Skynet';
   src: url("/fonts/Skynet.otf");
-  /* File to be stored at your site */
   font-weight: normal; }
-
 pre,
 code,
 kbd,
@@ -16,15 +14,14 @@ body {
   background: #fff;
   margin: 0;
   min-width: 300px;
-  font-family: "AzoSansLight","Helvetica Neue",Helvetica,Arial,sans-serif;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.1em; }
 
 html,
 body,
 #body2 {
   height: 100%;
   min-height: 100%;
-  -webkit-font-smoothing: antialiased; }
+  font-family: "GothamBlack","Myriad Pro Condensed","Arial Narrow",Arial,sans-serif; }
 
 section .title {
   font-size: 38px;
@@ -40,29 +37,32 @@ section .title {
 #site-header {
   background: #fff;
   width: 100%;
-  height: 50px;
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
   border-bottom: 1px solid #e6e6e6;
-  z-index: 100; }
+  z-index: 100;
+  font-family: "GothamBlack","Myriad Pro Condensed","Arial Narrow",Arial,sans-serif; }
   #site-header .container {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
     padding: 0; }
     #site-header .container a {
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       font-family: "GothamBlack","Myriad Pro Condensed","Arial Narrow",Arial,sans-serif;
       text-transform: uppercase;
       color: #999;
       text-decoration: none;
       font-weight: bold;
-      font-size: 12px;
+      font-size: 14px;
+      font-weight: bold;
       line-height: 1.4;
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
+      transition: all 0.5s ease;
+      display: inline-block; }
       #site-header .container a:hover {
         color: #444; }
         #site-header .container a:hover #menu-icon {
@@ -70,30 +70,37 @@ section .title {
           background-color: #444;
           border-radius: 4px 4px 0 0; }
     #site-header .container img {
-      width: 100%; }
+      width: auto;
+      height: 100%; }
     #site-header .container #logo {
       margin: 0 auto;
       float: left;
       width: auto;
-      height: 50px; }
+      height: 100%; }
     #site-header .container nav {
       float: right;
-      min-height: 100%; }
+      height: 100%; }
       #site-header .container nav ul {
-        list-style: none; }
+        list-style: none;
+        height: 100%;
+        margin: 0;
+        padding: 0; }
         #site-header .container nav ul li {
           display: inline-block;
-          float: left;
-          padding: 0 20px; }
+          padding: 0 17px;
+          vertical-align: middle; }
           @media screen and (max-width: 1080px) {
             #site-header .container nav ul li {
-              padding: 0 15px; } }
-          @media screen and (max-width: 970px) {
+              padding: 3px 15px; } }
+          @media screen and (max-width: 1024px) {
             #site-header .container nav ul li {
-              padding: 0 4px; } }
-          @media screen and (max-width: 890px) {
+              padding: 3px 10px; } }
+          @media screen and (max-width: 943px) {
             #site-header .container nav ul li {
-              padding: 0 3px; } }
+              padding: 3px 5px; } }
+          @media screen and (max-width: 863px) {
+            #site-header .container nav ul li {
+              padding: 3px 2px; } }
       #site-header .container nav #menu-icon {
         display: hidden;
         width: 50px;
@@ -106,27 +113,29 @@ section .title {
         margin: 19px 0;
         border-radius: 3px; }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 830px) {
   #site-header {
     position: absolute;
     height: 50px; }
-    #site-header nav ul,
-    #site-header nav:active ul {
+    #site-header .container nav ul,
+    #site-header .container nav:active ul {
+      height: 0;
       display: none;
       position: absolute;
-      padding: 20px;
       background: #fff;
       right: 0;
-      top: 34px;
+      top: 50px;
       width: 100%; }
-    #site-header nav li {
+    #site-header .container nav li {
+      background: white;
       text-align: center;
       width: 100%;
-      padding: 10px;
-      margin: 5px; }
-  #menu-icon {
-    display: inline-block; } }
-
+      padding: 5px 10px;
+      margin: 0px 0; }
+      #site-header .container nav li:hover {
+        background: #00b6b9; }
+    #site-header #menu-icon {
+      display: inline-block; } }
 section.intro {
   left: 0;
   top: 0;
@@ -519,7 +528,7 @@ section.features {
       @media screen and (max-width: 600px) {
         section.features .container .features_item {
           width: 99%; } }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 830px) {
         section.features .container .features_item {
           width: 49%; } }
       section.features .container .features_item .features_item_icon {
@@ -742,7 +751,8 @@ footer {
         border: #999;
         left: 70px;
         border-radius: 10px; }
-      footer .container a:hover,
-      footer .container a:active {
+      footer .container a:hover, footer .container a:active {
         color: #fff;
         text-decoration: none; }
+
+/*# sourceMappingURL=main.css.map */
