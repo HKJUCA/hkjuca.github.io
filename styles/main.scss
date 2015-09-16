@@ -769,7 +769,11 @@ section.agenda {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-bottom: 60px;
+
+    @media screen and (max-width: $mobile) {
+      padding: 20px;
+      font-size: 12px;
+    }
 
     .title {
       padding: 50px;
@@ -784,7 +788,8 @@ section.agenda {
       padding: 20px;
 
       @media screen and (max-width: $mobile) {
-        padding: 0;
+        padding: 10px;
+        font-size: 12px;
       }
 
       &:nth-child(1) {
@@ -805,7 +810,7 @@ section.agenda {
       padding: 10px;
 
       @media screen and (max-width: $mobile) {
-        padding: 0;
+        padding: 10px 0;
       }
 
       &:last-of-type {
@@ -820,7 +825,8 @@ section.agenda {
       width: 20%;
 
       @media screen and (max-width: $mobile) {
-        padding: 0;
+        font-size: 14px;
+        padding: 5px;
       }
     }
   }

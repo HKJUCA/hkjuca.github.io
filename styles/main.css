@@ -551,8 +551,11 @@ section.agenda {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    padding-bottom: 60px; }
+    text-align: center; }
+    @media screen and (max-width: 600px) {
+      section.agenda .container {
+        padding: 20px;
+        font-size: 12px; } }
     section.agenda .container .title {
       padding: 50px; }
     section.agenda .container table {
@@ -562,7 +565,8 @@ section.agenda {
       padding: 20px; }
       @media screen and (max-width: 600px) {
         section.agenda .container td {
-          padding: 0; } }
+          padding: 10px;
+          font-size: 12px; } }
       section.agenda .container td:nth-child(1) {
         width: 20%; }
       section.agenda .container td:nth-child(2) {
@@ -574,7 +578,7 @@ section.agenda {
       padding: 10px; }
       @media screen and (max-width: 600px) {
         section.agenda .container tr {
-          padding: 0; } }
+          padding: 10px 0; } }
       section.agenda .container tr:last-of-type {
         border: none; }
     section.agenda .container th {
@@ -584,7 +588,8 @@ section.agenda {
       width: 20%; }
       @media screen and (max-width: 600px) {
         section.agenda .container th {
-          padding: 0; } }
+          font-size: 14px;
+          padding: 5px; } }
 
 section.lucky-draw {
   color: #999;
