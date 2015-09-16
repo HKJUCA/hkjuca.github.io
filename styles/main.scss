@@ -758,9 +758,8 @@ section.agenda {
   font-family: 'Alegreya Sans', sans-serif;
   background: white;
   color: $uc-gray;
-  padding: 60px 200px 6px;
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $tablet) {
     padding: 0;
   }
 
@@ -770,7 +769,7 @@ section.agenda {
     margin-right: auto;
     text-align: center;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet) {
       padding: 20px;
       font-size: 12px;
     }
@@ -851,7 +850,7 @@ section.lucky-draw {
 
       .item {
         display: inline-block;
-        width: 20%;
+        width: 40%;
         height: auto;
         padding: 5px;
 
