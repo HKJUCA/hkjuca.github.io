@@ -19,13 +19,11 @@ $font_0: Helvetica Neue;
 $font_1: Helvetica;
 $font_2: Arial;
 $font_3: sans-serif;
-
 @font-face {
   font-family: 'Skynet';
   src: url("/fonts/Skynet.otf");
   font-weight: normal;
 }
-
 pre,
 code,
 kbd,
@@ -34,14 +32,12 @@ tt {
   font-family: monospace,monospace;
   font-size: 1em;
 }
-
 body {
   background: #fff;
   margin: 0;
   min-width: 300px;
   letter-spacing: 0.1em;
 }
-
 html,
 body,
 #body2 {
@@ -49,22 +45,18 @@ body,
   min-height: 100%;
   font-family: "GothamBlack","Myriad Pro Condensed","Arial Narrow",Arial,sans-serif;
 }
-
-section {
-  .title {
+section {.title {
     font-size: 38px;
     text-align: center;
     padding-bottom: 1em;
     font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
-
     @media screen and (max-width: 640px) {
       font-size: 18px;
       padding-bottom: 0;
     }
   }
 }
-
 #site-header {
   background: #fff;
   width: 100%;
@@ -75,13 +67,11 @@ section {
   border-bottom: 1px solid #e6e6e6;
   z-index: 100;
   font-family: "GothamBlack","Myriad Pro Condensed","Arial Narrow",Arial,sans-serif;
-
   .container {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-
     a {
       letter-spacing: 1px;
       font-family: "GothamBlack","Myriad Pro Condensed","Arial Narrow",Arial,sans-serif;
@@ -96,10 +86,8 @@ section {
       -moz-transition: all 0.5s ease;
       transition: all 0.5s ease;
       display: inline-block;
-
       &:hover {
         color: #444;
-
         #menu-icon {
           z-index: 200;
           background-color: #444;
@@ -107,12 +95,10 @@ section {
         }
       }
     }
-
     img {
       width: auto;
       height: 100%;
     }
-
     #logo {
       margin: 0 auto;
       float: left;
@@ -121,7 +107,6 @@ section {
 
       // transform: translateY(25%);
     }
-
     nav {
       float: right;
       height: 100%;
@@ -132,37 +117,30 @@ section {
         height: 100%;
         margin: 0;
         padding: 0;
-
         li {
           display: inline-block;
           padding: 0 17px;
           vertical-align: middle;
-
           @media screen and (max-width: 1080px) {
             padding: 3px 15px;
           }
-
           @media screen and (max-width: 1024px) {
             padding: 3px 10px;
           }
-
           @media screen and (max-width: 943px) {
             padding: 3px 5px;
           }
-
           @media screen and (max-width: 863px) {
             padding: 3px 2px;
           }
         }
       }
-
       #menu-icon {
         display: hidden;
         width: 50px;
         height: 50px;
         background: $uc-red url("/images/menu-icon.png") center;
       }
-
       #register {
         color: white;
         background-color: $uc-red;
@@ -173,14 +151,10 @@ section {
     }
   }
 }
-
-@media only screen and (max-width : $tablet) {
-  #site-header {
+@media only screen and (max-width : $tablet) {#site-header {
     position: absolute;
     height: 50px;
-
-    .container {
-      nav ul,
+    .container {nav ul,
       nav:active ul {
         height: 0;
         display: none;
@@ -190,14 +164,12 @@ section {
         top: 50px;
         width: 100%;
       }
-
       nav li {
         background: white;
         text-align: center;
         width: 100%;
         padding: 5px 10px;
         margin: 0;
-
         &:hover {
           background: $uc-green;
         }
@@ -207,13 +179,11 @@ section {
       //   display: block;
       // }
     }
-
     #menu-icon {
       display: inline-block;
     }
   }
 }
-
 section.intro {
   left: 0;
   top: 0;
@@ -226,7 +196,6 @@ section.intro {
   overflow: hidden;
   color: white;
   padding: 0;
-
   .uc-intro-video {
     position: absolute;
     background-size: cover;
@@ -237,7 +206,6 @@ section.intro {
     z-index: 0;
     top: 0;
     left: 0;
-
     video {
       background-size: cover;
       opacity: 1;
@@ -247,7 +215,6 @@ section.intro {
       height: auto;
     }
   }
-
   .video-cover {
     background-color: $uc-black;
     position: absolute;
@@ -299,7 +266,6 @@ section.intro {
   .uc-date {
 
   }
-
   .slogan-container {
     max-width: 68em;
     margin-left: auto;
@@ -312,7 +278,6 @@ section.intro {
     @media screen and (max-width: $mobile) {
       display: none;
     }
-
     .header-slogan {
       margin-top: 20px;
       line-height: 30px;
@@ -322,13 +287,11 @@ section.intro {
       color: #fff;
       text-align: center;
       display: inline-block;
-
       &:first-of-type {
         border: none;
       }
     }
   }
-
   .logo-container {
     width: 100%;
     padding: 0 30px;
@@ -341,18 +304,15 @@ section.intro {
     text-align: center;
     z-index: 3;
     box-sizing: border-box;
-
     .uc-logo {
       padding-top: 100px;
       display: inline-block;
       height: 60px;
       width: auto;
-
       @media screen and (max-width: $mobile) {
         height: 50px;
       }
     }
-
     .uc-name {
       margin-top: 30px;
       display: block;
@@ -363,17 +323,14 @@ section.intro {
       margin-right: auto;
       font-family: "AzoSansThin","Helvetica Neue",Helvetica,Arial,sans-serif;
       font-weight: normal;
-
       @media screen and (max-width: $mobile) {
         font-size: 20px;
         font-weight: bold;
       }
     }
-
     .uc-title {
       margin-top: 30px;
     }
-
     .uc-register-btn {
       margin: 30px;
       background-color: $uc-red;
@@ -395,7 +352,6 @@ section.intro {
       width: 20%;
       white-space: normal;
       overflow: hidden;
-
       @media screen and (max-width: $mobile) {
         width: 40%;
         padding: 10px 20px;
@@ -403,18 +359,15 @@ section.intro {
       }
     }
   }
-
   .whats-new-container {
     position: absolute;
     bottom: 40px;
     width: 100%;
     text-align: center;
     z-index: 2;
-
     @media screen and (max-width: $mobile) {
       display: none;
     }
-
     button.whats-new {
       background: $uc-black;
       outline: none;
@@ -426,7 +379,6 @@ section.intro {
       z-index: 2;
       position: relative;
       width: 150px;
-
       &:before {
         bottom: -30px;
         left: 50%;
@@ -438,7 +390,6 @@ section.intro {
         border-right: 15px solid transparent;
         border-bottom: 15px solid transparent;
       }
-
       &:after {
         bottom: -26px;
         left: 50%;
@@ -453,23 +404,19 @@ section.intro {
     }
   }
 }
-
 section {
   background: #fff;
   padding: 60px 20px;
   position: relative;
   border-bottom: 1px solid #e5e5e5;
-
   @media screen and (max-width: $mobile) {
 
     // min-height: 700px;
   }
 }
-
 section.news {
   min-height: 650px;
   background: $uc-session-gray;
-
   .date {
     position: absolute;
     font-size: 40px;
@@ -479,7 +426,6 @@ section.news {
     background: #79bca5;
     width: 100px;
     top: 40px;
-
     &:before {
       position: absolute;
       bottom: 0;
@@ -491,7 +437,6 @@ section.news {
       z-index: 0;
       opacity: 0.2;
     }
-
     &:after {
       position: absolute;
       right: 0;
@@ -502,7 +447,6 @@ section.news {
       border-bottom: transparent solid 25px;
     }
   }
-
   .event-info {
     width: 100%;
     position: absolute;
@@ -512,22 +456,18 @@ section.news {
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     text-align: right;
-
-    .event-title {
-      @media screen and (max-width: $mobile) {
+    .event-title {@media screen and (max-width: $mobile) {
         font-size: 70px;
       }
       padding: 0 5px;
       font-size: 100px;
       color: #79bca5;
-
       strong {
         color: #568a7e;
 
         //font-weight: normal;
       }
     }
-
     .event-title-full {
       color: #79bca5;
       padding: 0 5px;
@@ -535,7 +475,6 @@ section.news {
       font-size: 19px;
     }
   }
-
   .event-about {
     position: absolute;
     top: 60%;
@@ -546,7 +485,6 @@ section.news {
     color: #fff;
     font-size: 16px;
     line-height: 20px;
-
     span {
       position: absolute;
       top: 50%;
@@ -558,47 +496,39 @@ section.news {
       -webkit-transform: translateY(-50%) translateX(-50%);
       display: block;
     }
-
     @media screen and (max-width: $mobile) {
       top: 60%;
       height: 40%;
     }
   }
 }
-
 #map {
   width: 100%;
   height: 100%;
 }
-
 section.uc-description {
   box-shadow: inset 0 -1px 0 white,inset 0 9px 14px -3px rgba(0,0,0,0.01);
   color: $uc-gray;
-
   .container {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
     .content {
       padding: 20px;
       line-height: 2em;
       font-size: 19x;
-
       @media screen and (max-width: $mobile) {
         padding: 15px;
         line-height: 1.3em;
       }
     }
-
     .u-logos {
       display: inline-block;
       text-align: center;
       margin: 10px;
       padding: 0;
       text-align: center;
-
       .u-logo {
         display: inline-block;
         width: 20%;
@@ -606,21 +536,17 @@ section.uc-description {
         margin: 0;
         padding: 5px;
         text-align: center;
-
         @media screen and (max-width: $mobile) {
           width: 70%;
           padding: 0;
         }
-
         img {
           width: 80%;
           height: auto;
           margin: 30 20px;
-
           @media screen and (max-width: $mobile) {
             width: 80%;
           }
-
           .u-logo-name {
             padding: 20px;
             font-size: 24px;
@@ -628,19 +554,15 @@ section.uc-description {
         }
       }
     }
-
     strong {
       color: $uc-red;
     }
-
     a {
       text-decoration: none;
     }
-
     .highlight {
       color: $uc-green;
     }
-
     .juca-logo {
       margin: 20px;
       background-color: $uc-green;
@@ -648,54 +570,51 @@ section.uc-description {
     }
   }
 }
-
 section.uc-supporting-org {
   color: $uc-gray;
   text-align: center;
   background-color: white;
-
   .container {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
+    .title {
+      padding-bottom: 0;
+    }
     .org-logos {
+      line-height: 10em;
       display: inline-block;
       text-align: center;
       margin: 0;
       padding: 0;
-
       .org-logo {
         display: inline-block;
         width: 20%;
         height: auto;
-        margin: 0 auto;
+        margin: 0 20px;
 
         // padding: 20px;
         text-align: center;
         vertical-align: middle;
-
         @media screen and (max-width: 700px) {
           width: 50%;
           margin: 20px;
         }
-
         @media screen and (max-width: $mobile) {
           width: 70%;
           margin: 20px;
 
           // padding: 5px;
         }
-
         img {
-          width: 80%;
+          width: auto;
           height: auto;
-
+          max-width: 180px;
+          max-height: 120px;
           @media screen and (max-width: $mobile) {
             width: 80%;
           }
-
           .org-logo-name {
             padding: 20px;
             font-size: 24px;
@@ -705,7 +624,6 @@ section.uc-supporting-org {
     }
   }
 }
-
 section.features {
   background: $uc-session-gray;
   padding: 20px 0;
@@ -716,14 +634,12 @@ section.features {
   color: $uc-gray;
   font-size: 15px;
   height: auto;
-
   .container {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     box-sizing: border-box;
-
     .features_item {
       display: inline-block;
       width: 24%;
@@ -731,20 +647,16 @@ section.features {
       margin: 0;
       font-size: 20px;
       font-family: 'Raleway', sans-serif;
-
       @media screen and (max-width: $mobile) {
         width: 99%;
       }
-
       @media screen and (max-width: $tablet) {
         width: 49%;
       }
-
       .features_item_icon {
         color: $uc-red;
         font-size: 60px;
       }
-
       strong {
         color: rgba(#333333, 0.88);
         font-size: 45px;
@@ -752,77 +664,61 @@ section.features {
     }
   }
 }
-
 section.agenda {
   font-size: 18px;
   font-family: 'Alegreya Sans', sans-serif;
   background: white;
   color: $uc-gray;
-
   @media screen and (max-width: $tablet) {
     padding: 0;
   }
-
   .container {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
     @media screen and (max-width: $tablet) {
       padding: 20px;
       font-size: 12px;
     }
-
     .title {
       padding: 50px;
     }
-
     table {
       border-collapse: collapse;
     }
-
     td {
       color: $uc-gray;
       padding: 20px;
-
       @media screen and (max-width: $mobile) {
         padding: 10px;
         font-size: 12px;
       }
-
       &:nth-child(1) {
         width: 20%;
       }
-
       &:nth-child(2) {
         width: 20%;
       }
-
       &:nth-child(3) {
         width: 20%;
       }
     }
-
     tr {
       border-bottom: #1daf8f solid 1px;
       padding: 10px;
-
       @media screen and (max-width: $mobile) {
         padding: 10px 0;
       }
-
       &:last-of-type {
         border: none;
       }
     }
-
     th {
       color: $uc-green;
       text-align: left;
       padding: 10px;
       width: 20%;
-
       @media screen and (max-width: $mobile) {
         font-size: 14px;
         padding: 5px;
@@ -830,40 +726,33 @@ section.agenda {
     }
   }
 }
-
 section.lucky-draw {
   color: $uc-gray;
   text-align: center;
   background-color: white;
-
   .container {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     color: $uc-gray;
-
     .items {
       display: inline-block;
       text-align: center;
       margin: 0;
-
       .item {
         display: inline-block;
         width: 40%;
         height: auto;
         padding: 5px;
-
         @media screen and (max-width: $mobile) {
           width: 70%;
           padding: 0;
         }
-
         img {
           width: 100%;
           height: auto;
         }
-
         .item-name {
           padding: 20px;
           font-size: 24px;
@@ -872,11 +761,9 @@ section.lucky-draw {
     }
   }
 }
-
 section.event-details {
   min-height: 600px;
   padding: 0;
-
   .details {
     z-index: 3;
     position: absolute;
@@ -888,7 +775,6 @@ section.event-details {
     left: 20px;
     min-width: 200px;
     color: $uc-green;
-
     .details-section {
       display: block;
       width: 100%;
@@ -896,13 +782,11 @@ section.event-details {
       text-align: center;
       vertical-align: middle;
       position: relative;
-
       i {
         display: block;
         font-size: 40px;
         margin-bottom: 10px;
       }
-
       .details-content {
         position: absolute;
         top: 50%;
@@ -914,14 +798,11 @@ section.event-details {
       }
     }
   }
-
   @media screen and (max-width: $mobile) {
     min-height: 500px;
-
     #map {
       height: 50%;
     }
-
     .details {
       position: relative;
       top: 0;
@@ -930,7 +811,6 @@ section.event-details {
       width: 100%;
       left: 0;
       height: auto;
-
       .details-section {
         display: inline;
         width: 50%;
@@ -940,13 +820,11 @@ section.event-details {
         position: relative;
         float: left;
         border-bottom: $uc-green solid 1px;
-
         i {
           display: block;
           font-size: 40px;
           margin-bottom: 10px;
         }
-
         .details-content {
           position: relative;
           top: 50%;
@@ -960,21 +838,17 @@ section.event-details {
     }
   }
 }
-
 section.register {
   background: white;
   text-align: center;
   color: $uc-gray;
-
   .container {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-
     .title {
       margin: 50px;
     }
-
     .btn-register {
       position: absolute;
       outline: none;
@@ -991,7 +865,6 @@ section.register {
       transform: translateY(-50%) translateX(-50%);
       -ms-transform: translateY(-50%) translateX(-50%);
       -webkit-transform: translateY(-50%) translateX(-50%);
-
       &:after {
         position: absolute;
         content: '';
@@ -1002,7 +875,6 @@ section.register {
         opacity: 0.1;
         left: 0;
       }
-
       &.disable {
         color: $uc-gray;
         cursor: default;
@@ -1010,12 +882,10 @@ section.register {
     }
   }
 }
-
 footer {
   background: $uc-session-gray;
   text-align: center;
   padding: 60px 20px;
-
   .container {
     border-top: 1px solid $uc-gray;
     border-bottom: 1px solid $uc-gray;
@@ -1023,31 +893,26 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-
     .copyright {
       float: right;
       right: 20px;
       color: $uc-gray;
       font-size: 14px;
     }
-
     a {
       float: left;
-
       i.fa {
         float: left;
         left: 20px;
         color: $uc-gray;
         font-size: 30px;
       }
-
       .hint {
         padding: 5px 10px;
         border: $uc-gray;
         left: 70px;
         border-radius: 10px;
       }
-
       &:hover,
       &:active {
         color: #fff;
