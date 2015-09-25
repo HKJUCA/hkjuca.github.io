@@ -2,6 +2,7 @@
   font-family: 'Skynet';
   src: url("/fonts/Skynet.otf");
   font-weight: normal; }
+
 pre,
 code,
 kbd,
@@ -136,6 +137,7 @@ section .title {
         background: #00b6b9; }
     #site-header #menu-icon {
       display: inline-block; } }
+
 section.intro {
   left: 0;
   top: 0;
@@ -760,8 +762,35 @@ footer {
         border: #999;
         left: 70px;
         border-radius: 10px; }
-      footer .container a:hover, footer .container a:active {
+      footer .container a:hover,
+      footer .container a:active {
         color: #fff;
         text-decoration: none; }
 
-/*# sourceMappingURL=main.css.map */
+.countDown .line {
+  line-height: 4em; }
+
+@media (max-width: 850px) {
+  .countDown .flipTimer {
+    display: none; } }
+
+.countDown .flipTimer .timer-day-label {
+  display: inline-block;
+  font-size: 30%;
+  vertical-align: middle;
+  margin-bottom: 40px;
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.countDown .flipTimer .timer-sep {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 60px;
+  margin-left: -20px;
+  margin-right: -20px; }
+
+.countDown .textTimer {
+  padding: 20px 5px; }
+  @media (min-width: 850px) {
+    .countDown .textTimer {
+      display: none; } }

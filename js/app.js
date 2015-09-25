@@ -92,6 +92,12 @@
       map.setMapTypeId('map_style');
     }
 
-    google.maps.event.addDomListener(window, 'load', initialize);
+  google.maps.event.addDomListener(window, 'load', initialize);
+
+  var countDownDate = new Date('Oct 4, 2015 17:45:00');
+  $('.flipTimer').flipTimer({ direction: 'down', date: countDownDate, callback: function() { } });
+  $(".textTimer").countdown(countDownDate, function(event) {
+    $(this).text(event.strftime('%D days %H:%M:%S'))
+  })
 
 })(window);
