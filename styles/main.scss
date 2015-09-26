@@ -329,6 +329,11 @@ section.intro {
     .uc-title {
       margin-top: 30px;
     }
+    .uc-title.longer-title {
+      @media screen and (max-width: 585px) {
+        display: none;
+      }
+    }
     .uc-register-btn {
       margin: 30px;
       background-color: $uc-red;

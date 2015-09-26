@@ -253,6 +253,9 @@ section.intro {
           font-weight: bold; } }
     section.intro .logo-container .uc-title {
       margin-top: 30px; }
+    @media screen and (max-width: 585px) {
+      section.intro .logo-container .uc-title.longer-title {
+        display: none; } }
     section.intro .logo-container .uc-register-btn {
       margin: 30px;
       background-color: #ed2739;
