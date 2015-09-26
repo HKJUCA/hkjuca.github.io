@@ -812,4 +812,6 @@ footer {
   .countDown.hidden {
     visibility: hidden; }
   .countDown .line {
+    color: #f99;
+    font-size: 100%;
     line-height: 2em; }
