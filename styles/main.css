@@ -206,7 +206,7 @@ section.intro {
     margin-left: auto;
     margin-right: auto;
     opacity: 0.6; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 950px) {
       section.intro .slogan-container {
         display: none; } }
     section.intro .slogan-container .header-slogan {
