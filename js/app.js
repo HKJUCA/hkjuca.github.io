@@ -97,13 +97,21 @@
   var countDownContainer = $('.countDown');
   var countDownDate = new Date('Sep 28, 2015 00:00:00');
 
-  $(".textTimer").countdown(countDownDate, function(event) {
+  $(".countDown-longer .textTimer").countdown(countDownDate, function(event) {
     $(this).text(event.strftime('%-D Days, %-H Hours, %-M Minutes, %-S Seconds'))
     if (Date.now() > countDownDate) {
       countDownContainer.hide();
     } else {
       if (countDownContainer.hasClass('hidden')) countDownContainer.removeClass('hidden');
     }
-  })
+  });
+  $(".countDown-shorter .textTimer").countdown(countDownDate, function(event) {
+    $(this).text(event.strftime('%-D Days %H:%M:%S'))
+    if (Date.now() > countDownDate) {
+      countDownContainer.hide();
+    } else {
+      if (countDownContainer.hasClass('hidden')) countDownContainer.removeClass('hidden');
+    }
+  });
 
 })(window);

@@ -992,4 +992,14 @@ footer {
     font-size: 100%;
     line-height: 2em;
   }
+  @media screen and (max-width: 585px) {
+    &.countDown-longer {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 585px) {
+    &.countDown-shorter {
+      display: none;
+    }
+  }
 }
