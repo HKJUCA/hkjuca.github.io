@@ -90,18 +90,20 @@ section .title {
           display: inline-block;
           padding: 0 17px;
           vertical-align: middle; }
-          @media screen and (max-width: 1080px) {
+          @media screen and (max-width: 1090px) {
             #site-header .container nav ul li {
               padding: 3px 15px; } }
-          @media screen and (max-width: 1024px) {
+          @media screen and (max-width: 1060px) {
             #site-header .container nav ul li {
               padding: 3px 10px; } }
-          @media screen and (max-width: 943px) {
+          @media screen and (max-width: 980px) {
             #site-header .container nav ul li {
               padding: 3px 5px; } }
-          @media screen and (max-width: 863px) {
+          @media screen and (max-width: 900px) {
             #site-header .container nav ul li {
-              padding: 3px 2px; } }
+              padding: 3px 2px; }
+              #site-header .container nav ul li a {
+                font-size: 13px; } }
       #site-header .container nav #menu-icon {
         display: hidden;
         width: 50px;
