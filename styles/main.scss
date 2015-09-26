@@ -980,33 +980,11 @@ footer {
 }
 
 .countDown {
+  padding: 20px;
+  &.hidden {
+    visibility: hidden;
+  }
   .line {
-    line-height: 4em;
-  }
-  .flipTimer {
-    @media(max-width: 850px) {
-      display: none;
-    }
-    .timer-day-label {
-      display: inline-block;
-      font-size: 30%;
-      vertical-align: middle;
-      margin-bottom: 40px;
-      margin-left: -10px;
-      margin-right: -10px;
-    }
-    .timer-sep {
-      display: inline-block;
-      vertical-align: middle;
-      margin-bottom: 60px;
-      margin-left: -20px;
-      margin-right: -20px;
-    }
-  }
-  .textTimer {
-    @media(min-width: 850px) {
-      display: none;
-    }
-    padding: 20px 5px;
+    line-height: 2em;
   }
 }

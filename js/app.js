@@ -94,10 +94,16 @@
 
   google.maps.event.addDomListener(window, 'load', initialize);
 
-  var countDownDate = new Date('Oct 4, 2015 17:45:00');
-  $('.flipTimer').flipTimer({ direction: 'down', date: countDownDate, callback: function() { } });
+  var countDownContainer = $('.countDown');
+  var countDownDate = new Date('Sep 28, 2015 00:00:00');
+
   $(".textTimer").countdown(countDownDate, function(event) {
-    $(this).text(event.strftime('%D days %H:%M:%S'))
+    $(this).text(event.strftime('%-D Days, %-H Hours, %-M Minutes, %-S Seconds'))
+    if (Date.now() > countDownDate) {
+      countDownContainer.hide();
+    } else {
+      if (countDownContainer.hasClass('hidden')) countDownContainer.removeClass('hidden');
+    }
   })
 
 })(window);
