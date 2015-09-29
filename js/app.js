@@ -95,7 +95,7 @@
   google.maps.event.addDomListener(window, 'load', initialize);
 
   var countDownContainer = $('.countDown');
-  var countDownDate = new Date('Sep 28, 2015 00:00:00');
+  var countDownDate = new Date('Oct 3, 2015 00:00:00');
 
   $(".countDown-longer .textTimer").countdown(countDownDate, function(event) {
     $(this).text(event.strftime('%-D Days, %-H Hours, %-M Minutes, %-S Seconds'))
