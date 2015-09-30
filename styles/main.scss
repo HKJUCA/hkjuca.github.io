@@ -119,16 +119,16 @@ section {.title {
         padding: 0;
         li {
           display: inline-block;
-          padding: 0 17px;
+          padding: 0 15px;
           vertical-align: middle;
           @media screen and (max-width: 1090px) {
-            padding: 3px 15px;
+            padding: 3px 13px;
           }
           @media screen and (max-width: 1060px) {
-            padding: 3px 10px;
+            padding: 3px 8px;
           }
           @media screen and (max-width: 980px) {
-            padding: 3px 5px;
+            padding: 3px 3px;
           }
           @media screen and (max-width: 900px) {
             padding: 3px 2px;
